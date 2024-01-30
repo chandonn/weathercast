@@ -56,3 +56,31 @@
     font-size: 7em;
   }
 }
+
+@media screen and (max-width: 630px) {
+  .today svg {
+    font-size: 4.5em;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .temperature {
+    flex-direction: column-reverse;
+  }
+
+  .today {
+    margin-left: 0;
+  }
+
+  .info {
+    flex-direction: row;
+    justify-content: flex-start;
+    border-top: 1px solid var(--foreground-color-transparet);
+    margin-top: 1em;
+    padding-top: 1.5em;
+  }
+
+  .info div + div {
+    margin-left: 3em;
+  }
+}
