@@ -1,6 +1,14 @@
 
 # WeatheCast
-Weather forecast application, built with TypeScript, Nextjs and ReactJs, and deployed to Vercel. [WeatherCast](https://weathercast-sand.vercel.app/)
+
+Weather forecast application built with TypeScript, Nextjs and ReactJs, and deployed to Vercel. [WeatherCast](https://weathercast-sand.vercel.app/)
+
+## Usage
+
+- Use the search bar to locate any city you want to see the forecast from
+- Click the top right corner to open the menu, where you can change the units
+- Icons will resemble the weather conditions of the current day and next days
+- The next days temperature is displayed as Min/Max respectively
 
 ## Running the application locally
 
@@ -24,9 +32,9 @@ Head to [WeatherCast](https://weathercast-sand.vercel.app/) to see the live proj
 
 ### Architecture
 
-- Clean architecture: Organizing the project contents, components, and files, makes it easier to find anything and extend the project.
+- Clean architecture: Organizing the project contents, components, and files. Makes it easier to find anything and extend the project.
 
-- Flux architecture for state management: Because it makes the project more scalable and maintainable.
+- Flux architecture for state management: Makes the project more scalable and maintainable.
 
 ### State management
 
@@ -44,4 +52,4 @@ Head to [WeatherCast](https://weathercast-sand.vercel.app/) to see the live proj
 - Font: [Inter](https://fonts.google.com/specimen/Inter)
 - Images: [Unsplash](https://unsplash.com/)
 
-The UI design was built using a simple and clean design. Combining elements such as thin fonts for texts and translucent containers. That enhances the experience when using the application, which showcases the next five days weather forecast for any city, catching users' attention, while presenting current weathr information at the top of the screen.
+The UI design was built using a simple and clean design. Combining elements such as thin fonts for texts and translucent containers. That enhances the experience when using the application, which showcases the next five days weather forecast for any city, catching users' attention, while presenting current weather information at the spotlight.

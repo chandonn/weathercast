@@ -38,7 +38,7 @@ export const getWeatherData = async (
         method: 'GET',
         mode: 'cors',
         credentials: 'omit',
-      }
+      },
     )
     const response = await apiRequest
     const json = await response.json()
