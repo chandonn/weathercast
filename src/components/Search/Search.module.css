@@ -1,0 +1,26 @@
+.search {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.search input {
+  border: none;
+  font-size: 3em;
+  background-color: transparent;
+  font-weight: 100;
+  font-family: inherit;
+  padding: 15px 10px;
+  border-bottom: 1px solid var(--text-color);
+  text-align: center;
+  margin-top: 1em;
+  color: var(--text-color);
+}
+
+.search input:active,
+.search input:focus,
+.search input:focus-visible {
+  border: none;
+  border-bottom: 1px solid var(--text-color);
+  outline: none;
+}
