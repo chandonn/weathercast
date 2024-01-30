@@ -411,7 +411,7 @@ export const getWeatherData = async (
 }
 
 function buildGeolocationQueryString(query: string) {
-  const baseURL = 'http://api.openweathermap.org/geo/1.0/direct'
+  const baseURL = 'https://api.openweathermap.org/geo/1.0/direct'
   const params = {
     q: query,
     type: 'like',
