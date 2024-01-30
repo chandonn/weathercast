@@ -14,8 +14,8 @@ const unitsBase = {
   },
   imperial: {
     temp: '°F',
-    wind_speed: 'miles/h',
-    humidity: '%',
+    wind_speed: ' miles/h',
+    humidity: ' %',
   },
 }
 
@@ -30,10 +30,10 @@ export function apiToWeather(
     windSpeed: current.wind_speed + unitsBase[units]['wind_speed'],
     humidity: current.humidity + unitsBase[units]['humidity'],
     date: 'Today',
-    description: current.weather[0]["main"],
+    description: current.weather[0]['main'],
     forecast: buildForecast(daily, units),
-    icon: current.weather[0]["icon"] || "01d",
-    info: current.weather[0]["description"]
+    icon: current.weather[0]['icon'] || '01d',
+    info: current.weather[0]['description'],
   } as Data['weather']
 
   return transformed
@@ -49,9 +49,9 @@ function buildForecast(
       return {
         temperature: `${temp['min']}${unitsBase[units]['temp']} / ${temp['max']}${unitsBase[units]['temp']}`,
         date: days[new Date((dt + 10800) * 1000).getDay()],
-        description: weather[0]["main"],
-        icon: weather[0]["icon"],
-        info: weather[0]["description"]
+        description: weather[0]['main'],
+        icon: weather[0]['icon'],
+        info: weather[0]['description'],
       }
     } else {
       return {}

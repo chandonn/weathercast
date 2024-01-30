@@ -4,6 +4,8 @@ import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import "./globals.css"
 import { Context } from "@/store/state"
+import { Suspense } from "react"
+import Loading from "./loading"
 config.autoAddCss = false
 
 const inter = Inter({
@@ -26,7 +28,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Context>
-          {children}
+          <Suspense fallback={<Loading />}>
+            {children}
+          </Suspense>
         </Context>
       </body>
     </html>
