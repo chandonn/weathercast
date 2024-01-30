@@ -1,12 +1,13 @@
 :root {
   --max-width: 1100px;
-  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
-    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
-    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
-  --background-color: #0FA3B1;
-  --text-color: #F9F7F3;
+  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
+    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
+    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+  --background-color: #0fa3b1;
+  --text-color: #f9f7f3;
   --foreground-color: #454372;
   --foreground-color-transparet: rgba(69, 67, 114, 0.5);
+  --text-hover-color: #eddea4;
 }
 
 * {
@@ -44,9 +45,31 @@ h3 {
 }
 
 h4 {
-  font-size: 1.5em;
+  font-size: 1.8em;
 }
 
 h5 {
-  font-size: 1em;
+  font-size: 1.1em;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 6em;
+  }
+  
+  h2 {
+    font-size: 5em;
+  }
+  
+  h3 {
+    font-size: 2em;
+  }
+  
+  h4 {
+    font-size: 1.3em;
+  }
+  
+  h5 {
+    font-size: 1em;
+  }
 }

@@ -1,4 +1,5 @@
 .main {
+  font-family: Inter;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -17,23 +18,4 @@
 .title {
   margin-top: 2rem;
   margin-bottom: 1rem;
-}
-
-.search {
-  border: none;
-  font-size: 4em;
-  background-color: transparent;
-  font-weight: 100;
-  font-family: inherit;
-  padding: 15px 10px;
-  border-bottom: 1px solid var(--text-color);
-  text-align: center;
-  margin-top: 1em;
-  color: var(--text-color);
-}
-
-.search:active, .search:focus, .search:focus-visible {
-  border: none;
-  border-bottom: 1px solid var(--text-color);
-  outline: none;
 }

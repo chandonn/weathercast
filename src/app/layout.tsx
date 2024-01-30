@@ -3,11 +3,13 @@ import { Inter } from "next/font/google"
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import "./globals.css"
+import { Context } from "@/store/state"
 config.autoAddCss = false
 
 const inter = Inter({
   subsets: ["latin"],
-  weight: ["100", "200", "400"]
+  weight: ["100", "200", "300"],
+  display: 'swap'
 })
 
 export const metadata: Metadata = {
@@ -22,7 +24,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Context>
+          {children}
+        </Context>
+      </body>
     </html>
   )
 }
