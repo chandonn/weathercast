@@ -1,5 +1,5 @@
 
-# WeatheCast
+# WeatherCast
 
 Weather forecast application built with TypeScript, Nextjs and ReactJs, and deployed to Vercel. [WeatherCast](https://weathercast-sand.vercel.app/)
 
